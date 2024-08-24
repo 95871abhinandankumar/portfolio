@@ -1,0 +1,51 @@
+.project-card img {
+    display: block;
+    height: 201px;
+    width: 330px;
+}
+
+.project-card {
+    color: #ABB2BF;
+    border: 1px solid #ABB2BF;
+    width: 330px;
+}
+
+.skills-used {
+    border: 1px solid #ABB2BF;
+}
+
+.skills-used {
+    padding: 10px;
+}
+.skills-used span {
+    margin: 0 5px;
+}
+
+.project-card-content {
+    padding: 15px;
+}
+
+.project-card-content div {
+    display: flex;
+    gap: 10px;
+}
+
+.project-card-content h2 {
+    color: white;
+}
+
+.github {
+    border: 1px solid #C778DD;
+    font-size: 16px;
+    font-weight: medium;
+    padding: 5px;
+    color: white;
+}
+
+.live {
+    border: 1px solid #C778DD;
+    font-size: 16px;
+    font-weight: medium;
+    padding: 5px;
+    color: white;
+}
