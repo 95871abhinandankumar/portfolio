@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Header from "./header/header";
 import sideImage from "./assets/images/side-image.png";
@@ -7,22 +8,144 @@ import skillSideImage from "./assets/images/skill-side-image.png";
 import SkillCard from "./skill-card/skillCard";
 import aboutMeImage from "./assets/images/about-me-img.png";
 import Logo from "./header/logo";
+import email from "./assets/images/email.png";
+import github from "./assets/images/Github.svg";
+import linkedin from "./assets/images/Linkedin.svg";
+import twitter from "./assets/images/Twitter.svg";
+import { useTranslation } from "react-i18next";
+import { useState, useRef } from "react";
+
+const projects = [
+  {
+    image: "https://via.placeholder.com",
+    techUsed: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Python",
+      "Django",
+      "Bootstrap",
+      "SQLite",
+    ],
+    name: "Grabit",
+    description:
+      "An online marketplace tailored for the Institute during the COVID-19 pandemic, designed to minimize physical interactions by enabling multi-photo ad postings, detailed product views, and integrated chat and support features.",
+    github: "https://github.com",
+    liveUrl: "https://google.com",
+  },
+  {
+    image: "https://via.placeholder.com",
+    techUsed: ["Python", "Pandas", "NumPy", "Jupyter Notebook", "Matplotlib"],
+    name: "Wine Quality Prediction",
+    description:
+      "A predictive model for wine quality using Logistic Regression, based on a dataset from the UCI Machine Learning Repository. The model achieved an accuracy of up to 90%, providing reliable insights into wine quality.",
+    github: "https://github.com",
+    liveUrl: "https://google.com",
+  },
+  {
+    image: "https://via.placeholder.com",
+    techUsed: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Python",
+      "Django",
+      "Bootstrap",
+      "SQLite",
+    ],
+    name: "Hack4Earth",
+    description:
+      "A microblogging platform developed in just 7 days for the Hack for Earth Hackathon, allowing users to share ideas and initiatives related to our institution’s cleanliness drive. Achieved a top-three ranking in the competition.",
+    github: "https://github.com",
+    liveUrl: "https://google.com",
+  },
+  {
+    image: "https://via.placeholder.com",
+    techUsed: ["Java", "JDBC", "MySQL"],
+    name: "Real Estate Office",
+    description:
+      "A database management system designed and implemented for a real estate office, facilitating agents in efficiently managing and selling properties within a city.",
+    github: "https://github.com",
+    liveUrl: "https://google.com",
+  },
+];
+
+const skills = {
+  languages: ["Java", "C", "Python", "JavaScript", "TypeScript", "SQL"],
+  databases: ["MongoDB", "MySQL", "SQLite", "PostgreSQL"],
+  tools: [
+    "React",
+    "Node.js",
+    "Git",
+    "Jenkins",
+    "Docker",
+    "Kubernetes",
+    "Figma",
+  ],
+  frameworks: ["Angular", "Spring Boot", "Django", "Bootstrap"],
+  others: ["AWS", "Redis", "Jira", "Jupyter Notebook", "Matplotlib"],
+};
+
+const socialMedia = {
+  github: "https://github.com/95871abhinandankumar/",
+  linkedin: "https://www.linkedin.com/in/abhinandan-kumar-6077291a6/",
+  twitter: "https://twitter.com",
+};
 
 function App() {
+  const { t } = useTranslation();
+  const [projectCount, setProjectCount] = useState(3);
+  const projectsRef = useRef(null);
+  const contactSectionRef = useRef(null);
+  const aboutSectionRef = useRef(null);
+  const handleViewAllClick = (e) => {
+    e.preventDefault();
+    setProjectCount(4);
+    projectsRef.current.scrollIntoView({ behavior: "smooth" }); // Scroll to the projects section
+  };
+
+  const convertToJSX = (text) => {
+    return text.split("<br>").map((line, index) => (
+      <React.Fragment key={index}>
+        {line}
+        {index < text.split("<br>").length - 1 && <br />}
+      </React.Fragment>
+    ));
+  };
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="wrapper">
+      <aside className="sidebar">
+        <div className="vertical-line"></div>
+        <a href={socialMedia.github}>
+          <img src={github} alt="github" />
+        </a>
+        <a href={socialMedia.linkedin}>
+          <img src={linkedin} alt="linkedin" />
+        </a>
+        <a href={socialMedia.twitter}>
+          <img src={twitter} alt="twitter" />
+        </a>
+      </aside>
       <div className="container">
-        <Header />
+        <Header 
+        onProjectClick={() => scrollToSection(projectsRef)}
+        onContactClick={() => scrollToSection(contactSectionRef)}
+        onAboutClick={() => scrollToSection(aboutSectionRef)}
+        />
         <main className="main">
           <section className="first">
             <div className="first-content">
               <h1>
-                Abhinandan is a <strong>full-stack developer</strong>
+                {t("thumbnail.headerPart1")}{" "}
+                <strong>{t("thumbnail.headerPart2")}</strong>
               </h1>
-              <p>
-                He crafts responsive websites where technologies meet creativity
-              </p>
-              <button>Contact me !!</button>
+              <p>{t("thumbnail.description")}</p>
+              <button>{t("buttons.contactMe")} !!</button>
             </div>
             <div className="first-content-with-image">
               <img src={sideImage} alt="side-image" />
@@ -31,103 +154,123 @@ function App() {
           <section className="quote">
             <img src={quote} alt="quote" className="quote-image" />
           </section>
-          <section className="projects">
+          <section className="projects" ref={projectsRef}>
             <div className="projects-header">
               <h2>
-                <span className="span-inside-h2">#</span>projects
+                <span className="span-inside-h2">#</span>
+                {t("buttons.projects")}
               </h2>
               <hr />
-              <a href="/works">View All ~~&gt;</a>
+              <a href="/projects" onClick={handleViewAllClick}>
+                {t("buttons.viewAll")} ~~&gt;
+              </a>
             </div>
             <div className="projects-body">
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
+              {projects.map((project, index) =>
+                index < projectCount ? (
+                  <ProjectCard key={index} index={index + 1} project={project} />
+                ) : null
+              )}
             </div>
           </section>
 
           <section className="skills">
             <div className="skills-header">
               <h2>
-                <span className="span-inside-h2">#</span>skills
+                <span className="span-inside-h2">#</span>
+                {t("buttons.skills")}
               </h2>
               <hr />
             </div>
             <div className="skills-body">
               <img src={skillSideImage} alt="skill-side-image" />
               <div className="skills-body-content">
-                <SkillCard />
+                <SkillCard
+                  skillType={"Languages"}
+                  skillObject={skills.languages}
+                />
                 <div className="skills-body-content-box-1">
-                  <SkillCard />
-                  <SkillCard />
+                  <SkillCard
+                    skillType={"Databases"}
+                    skillObject={skills.databases}
+                  />
+                  <SkillCard skillType={"Other"} skillObject={skills.others} />
                 </div>
                 <div className="skills-body-content-box-2">
-                  <SkillCard />
-                  <SkillCard />
-                  <SkillCard />
+                  <SkillCard skillType={"Tools"} skillObject={skills.tools} />
+                  <SkillCard
+                    skillType={"Frameworks"}
+                    skillObject={skills.frameworks}
+                  />
                 </div>
               </div>
             </div>
           </section>
 
-          <section className="about-me">
+          <section className="about-me" ref={aboutSectionRef}>
             <div className="about-me-content">
               <div className="about-me-content-header">
                 <h2>
-                  <span className="span-inside-h2">#</span>about-me
+                  <span className="span-inside-h2">#</span>
+                  {t("buttons.about")}
                 </h2>
                 <hr />
               </div>
               <div className="about-me-content-body">
-                <p>
-                  Hello, i’m Elias! I’m a self-taught front-end developer based
-                  in Kyiv, Ukraine. I can develop responsive websites from
-                  scratch and raise them into modern user-friendly web
-                  experiences. Transforming my creativity and knowledge into a
-                  websites has been my passion for over a year. I have been
-                  helping various clients to establish their presence online. I
-                  always strive to learn about the newest technologies and
-                  frameworks.
-                </p>
-                <button className="read-more">Read more</button>
+                <p>{convertToJSX(t("about.description"))}</p>
+                <button className="read-more">{t("buttons.readMore")}</button>
               </div>
             </div>
             <img src={aboutMeImage} alt="about-me-side-image" />
           </section>
 
-          <section className="contacts">
+          <section className="contacts" ref={contactSectionRef}>
             <div className="contacts-header">
-              <h2><span className="span-inside-h2">#</span>Contacts</h2>
+              <h2>
+                <span className="span-inside-h2">#</span>
+                {t("buttons.contacts")}
+              </h2>
               <hr />
             </div>
             <div className="contacts-body">
               <div className="contacts-body-left">
-                I’m interested in freelance opportunities. However, if you have
-                other request or question, don’t hesitate to contact me
+                {convertToJSX(t("contact.description"))}
               </div>
-                <div className="contacts-detail-content">
-                  <div className="contacts-detail-content-header">
-                    Message me here
-                  </div>
-                  <div className="contacts-detail-content-body">
-                    <span>logo: abhinandank626@gmail.com</span>
-                  </div>
+              <div className="contacts-detail-content">
+                <div className="contacts-detail-content-header">
+                  Message me here
+                </div>
+                <div className="contacts-detail-content-body">
+                  <span className="email">
+                    <img src={email} alt="email-logo" /> {t("contact.email")}
+                  </span>
                 </div>
               </div>
+            </div>
           </section>
         </main>
         <footer>
+          <hr className="footer-seprator"></hr>
           <div className="footer-content">
             <div className="footer-content-about">
               <span>
-                <Logo /> <span>abhinandank626@gmail.com</span>
+                <Logo />{" "}
+                <span className="footer-content-about-email">
+                  {t("contact.email")}
+                </span>
               </span>
-              <span>Web designer and front-end developer</span>
+              <span>{t("currentRole")}</span>
             </div>
             <div className="footer-content-social-media">
               <h2>Media</h2>
-              <a href="https://www.linkedin.com/in/abhinandan-kumar-6b7b0b1b2/">
-                <i className="fab fa-linkedin"></i>
+              <a href={socialMedia.github}>
+                <img src={github} alt="github" />
+              </a>
+              <a href={socialMedia.linkedin}>
+                <img src={linkedin} alt="linkedin" />
+              </a>
+              <a href={socialMedia.twitter}>
+                <img src={twitter} alt="twitter" />
               </a>
             </div>
           </div>

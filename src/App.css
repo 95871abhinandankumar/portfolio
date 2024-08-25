@@ -4,11 +4,37 @@ hr {
   padding: 0px;
 }
 
+
 .wrapper {
-  background-color: #282C33;
+  background-color: #282c33;
   color: white;
-  font-family: Fira Code, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
+  font-family: Fira Code, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  /* background-image: url("./assets/images/background.png");
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+aside {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  width: 50px;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 191px;
+  background-color: #ABB2BF;
 }
 
 .container {
@@ -34,11 +60,11 @@ hr {
 
 .first-content h1 {
   font-size: 32px;
-    font-weight: 600;
-    color: white;
-    font-weight: semibold;
-    font-family: Fira Code, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-      'Liberation Sans', sans-serif;
+  font-weight: 600;
+  color: white;
+  font-weight: semibold;
+  font-family: Fira Code, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
 }
 
 .first-content h1 strong {
@@ -47,7 +73,7 @@ hr {
 
 .first-content button {
   background: none;
-  border-color: #C778DD;
+  border-color: #c778dd;
   color: white;
   font-size: medium;
   width: 137px;
@@ -101,7 +127,8 @@ hr {
 .projects-body {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 14px;
+  flex-wrap: wrap;
 }
 
 .skills-header {
@@ -111,15 +138,17 @@ hr {
 }
 
 .skills-header hr {
-  width: 30%;
+  width: 239px;
   margin-left: 10px;
+  border: none;
+  height: 1px;
+  background-color: #c778dd;
 }
-
 
 .skills-body {
   display: flex;
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .skills-body img {
@@ -155,7 +184,7 @@ hr {
 .about-me img {
   display: block;
   height: 508px;
-  width: 343PX;
+  width: 343px;
 }
 
 .about-me-content-header {
@@ -165,17 +194,20 @@ hr {
 }
 
 .about-me-content-header hr {
-  width: 300px;
+  width: 326px;
   margin-left: 10px;
+  border: none;
+  height: 1px;
+  background-color: #c778dd;
 }
 
 p {
-  color: #ABB2BF;
+  color: #abb2bf;
 }
 
 .read-more {
   background: none;
-  border-color: #C778DD;
+  border-color: #c778dd;
   color: white;
   font-size: medium;
   width: 137px;
@@ -195,13 +227,16 @@ p {
 }
 
 .contacts-header hr {
-  width: 200px;
+  width: 127px;
   margin-left: 10px;
+  border: none;
+  height: 1px;
+  background-color: #c778dd;
 }
 
 .contacts-body-left {
   width: 505px;
-  color: #ABB2BF;
+  color: #abb2bf;
 }
 
 .contacts-body {
@@ -211,8 +246,8 @@ p {
 }
 
 .contacts-detail-content {
-  border: 1px solid #ABB2BF;
-  padding: 10px;
+  border: 1px solid #abb2bf;
+  padding: 20px;
 }
 
 .contacts-detail-content-header {
@@ -222,6 +257,63 @@ p {
 }
 
 .contacts-detail-content-body {
+  color: #abb2bf;
+}
+
+.email {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.footer-seprator {
+  width: 100%;
+  color: #abb2bf;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer span {
+  margin: 30px auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+}
+
+.footer-content span {
+  margin: 0;
+}
+
+.footer-content-about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-content-about-email {
+  font-size: 16px;
+  font-weight: lighter;
   color: #ABB2BF;
 }
 
+.footer-content-social-media {
+  width: 112px;
+
+}
+
+.footer-content-social-media h2 {
+  width: 100%;
+}
+
+.footer-content-social-media img {
+  margin: 0 2px;
+}

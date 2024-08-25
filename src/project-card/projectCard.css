@@ -8,17 +8,17 @@
     color: #ABB2BF;
     border: 1px solid #ABB2BF;
     width: 330px;
+    height: fit-content;
 }
 
 .skills-used {
     border: 1px solid #ABB2BF;
-}
-
-.skills-used {
     padding: 10px;
 }
 .skills-used span {
     margin: 0 5px;
+    display: inline-block;
+    width: fit-content;
 }
 
 .project-card-content {

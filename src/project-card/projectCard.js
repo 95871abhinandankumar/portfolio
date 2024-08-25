@@ -1,25 +1,25 @@
 import "./projectCard.css";
-export default function ProjectCard() {
+import { useTranslation } from "react-i18next";
+export default function ProjectCard({ index, project }) {
+  const { t } = useTranslation();
   return (
     <div className="project-card">
-      <img
-        src="https://unsplash.com/photos/the-letter-h-is-made-up-of-gold-Nid76CO69WE"
-        alt="project-image"
-      />
+      <img src={t(project.image)} alt="project-image" />
       <div className="skills-used">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
+        {project.techUsed.map((tech, index) => (
+          <span key={index}>{tech}</span>
+        ))}
       </div>
       <div className="project-card-content">
-        <h2>ChertNodes</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam
-          velit, vulputate eu pharetra nec, mattis ac neque.
-        </p>
+        <h2>{t(`projects.project${index}.name`)}</h2>
+        <p>{t(`projects.project${index}.description`)}</p>
         <div>
-            <a href="/" className="github">Github  &lt; ~ &gt;</a>
-            <b href="/" className="live">Live  &lt; ~ &gt;</b>
+          <a href={project.github} className="github">
+            {t("buttons.github")} &lt; ~ &gt;
+          </a>
+          <a href={project.liveUrl} className="live">
+            {t("buttons.live")} &lt; ~ &gt;
+          </a>
         </div>
       </div>
     </div>

@@ -1,0 +1,158 @@
+{
+  "name": "Abhinandan Kumar",
+  "currentRole": "Ingénieur Logiciel Associé",
+  "thumbnail": {
+    "headerPart1": "Abhinandan est un",
+    "headerPart2": "développeur full-stack",
+    "description": "Il crée des applications réactives où la technologie rencontre la créativité"
+  },
+
+  "about": {
+    "description": "Bonjour, je suis Abhinandan ! <br><br>Je suis développeur full-stack basé en Inde et je travaille actuellement chez Gainsight. Je suis spécialisé dans la création de sites web responsives à partir de zéro et leur transformation en expériences web modernes et conviviales.<br><br>Fort de plus d'un an d'expérience dans ce domaine, je m'efforce constamment d'apprendre les dernières technologies et frameworks. Je suis enthousiaste à l'idée de rejoindre une excellente équipe en tant que membre à plein temps.<br><br>"
+  },
+  "skills": {
+    "languages": ["Java", "C/C++", "Python", "JavaScript", "TypeScript", "SQL"],
+    "databases": ["MongoDB", "MySQL", "SQLite", "PostgreSQL"],
+    "tools": [
+      "React",
+      "Node.js",
+      "Git",
+      "Jenkins",
+      "Docker",
+      "Kubernetes",
+      "Figma"
+    ],
+    "frameworks": ["Angular", "Spring Boot", "Django", "Bootstrap"],
+    "others": ["AWS", "Redis", "Jira", "Jupyter Notebook", "Matplotlib"]
+  },
+
+  "projects": {
+    "project1": {
+      "image": "https://via.placeholder.com",
+      "techUsed": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python",
+        "Django",
+        "Bootstrap",
+        "SQLite"
+      ],
+      "name": "Grabit",
+      "description": "Un marché en ligne adapté à l'Institut pendant la pandémie de COVID-19, conçu pour minimiser les interactions physiques en permettant la publication d'annonces multi-photos, des vues détaillées des produits et des fonctionnalités de chat et de support intégrées.",
+      "github": "https://github.com",
+      "liveUrl": "https://google.com"
+    },
+    "project2": {
+      "image": "https://via.placeholder.com",
+      "techUsed": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Jupyter Notebook",
+        "Matplotlib"
+      ],
+      "name": "Prédiction de la qualité du vin",
+      "description": "Un modèle prédictif pour la qualité du vin utilisant la régression logistique, basé sur un jeu de données du UCI Machine Learning Repository. Le modèle a atteint une précision de 90 %, fournissant des informations fiables sur la qualité du vin.",
+      "github": "https://github.com",
+      "liveUrl": "https://google.com"
+    },
+    "project3": {
+      "image": "https://via.placeholder.com",
+      "techUsed": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python",
+        "Django",
+        "Bootstrap",
+        "SQLite"
+      ],
+      "name": "Hack4Earth",
+      "description": "Une plateforme de microblogging développée en seulement 7 jours pour le Hack for Earth Hackathon, permettant aux utilisateurs de partager des idées et des initiatives liées à la campagne de propreté de notre institution. A obtenu une place dans le top trois du concours.",
+      "github": "https://github.com",
+      "liveUrl": "https://google.com"
+    },
+    "project4": {
+      "image": "https://via.placeholder.com",
+      "techUsed": ["Java", "JDBC", "MySQL"],
+      "name": "Bureau immobilier",
+      "description": "Un système de gestion de base de données conçu et mis en œuvre pour un bureau immobilier, permettant aux agents de gérer et de vendre efficacement des propriétés dans une ville.",
+      "github": "https://github.com",
+      "liveUrl": "https://google.com"
+    }
+  },
+
+  "contact": {
+    "description": "Je suis actuellement à la recherche d'opportunités à temps plein pour rejoindre une grande équipe. Si vous avez des questions ou des opportunités, n'hésitez pas à me contacter.",
+    "email": "abhinandank626@gmail.com"
+  },
+
+  "socialMedia": {
+    "github": "https://github.com/95871abhinandankumar/",
+    "linkedin": "https://www.linkedin.com/in/abhinandan-kumar-6077291a6/",
+    "twitter": "https://twitter.com"
+  },
+
+  "buttons": {
+    "readMore": "En savoir plus",
+    "live": "En direct",
+    "github": "GitHub",
+    "contactMe": "Contactez-moi",
+    "home": "accueil",
+    "about": "à-propos",
+    "works": "travaux",
+    "contacts": "contacts",
+    "projects": "projets",
+    "viewAll": "Voir tout",
+    "skills": "compétences"
+  },
+
+  "education": {
+    "institution": "Institut Indien de Technologie de l'Information",
+    "degree": "Bachelor of Technology en Informatique",
+    "CGPA": "8.32 / 10.00"
+  },
+
+  "experience": {
+    "job1": {
+      "company": "Gainsight",
+      "title": "Ingénieur Logiciel Associé",
+      "duration": "Août 2019 - Présent",
+      "location": "Guwahati, Assam & Hyderabad, Telangana",
+      "description": "Dirigé la migration de la base de code existante vers les composants Gainsight Horizon, en alignant un nouveau système de design semblable à Ant Design, démontrant une adaptation habile et une compréhension approfondie des bases de code complexes. Impliqué en permanence dans les tâches quotidiennes de création de nouvelles fonctionnalités, de mise à jour des fonctionnalités existantes et d'amélioration des performances en réduisant le temps de réponse des API pour répondre aux exigences commerciales, tout en respectant les meilleures pratiques. Collaboration active avec l'équipe de sécurité pour résoudre tous les problèmes liés à la sécurité du code de notre équipe, en veillant à ce que les vulnérabilités identifiées soient rapidement corrigées."
+    },
+    "job2": {
+      "company": "IIT Bombay",
+      "title": "Stagiaire Développeur Logiciel",
+      "duration": "Sep 2022 – Jun 2023",
+      "location": "Mumbai, Maharashtra",
+      "description": "Développé des fonctionnalités clés pour la traduction de dictionnaires, y compris la détermination de l'ordre dynamique basé sur la pertinence du document. Implémenté la gestion des tâches asynchrones basées sur websocket pour les mises à jour en temps réel. Conçu et développé un outil d'analyse de journaux visuels pour afficher les statistiques de traduction des pages et des livres à l'aide de graphiques et de tableaux interactifs. Développé une fonctionnalité permettant aux utilisateurs de visualiser, télécharger et partager des dictionnaires d'exemples, améliorant ainsi leur utilité dans les traductions. Gestion réussie d'une équipe, favorisant la collaboration et renforçant à la fois les compétences techniques et interpersonnelles."
+    }
+  },
+
+  "skillsSummary": {
+    "concepts": [
+      "Compilateur",
+      "Système d'exploitation",
+      "Apprentissage automatique",
+      "SGBD",
+      "Structures de données et algorithmes",
+      "Programmation orientée objet"
+    ],
+    "softSkills": [
+      "Communication",
+      "Travail d'équipe",
+      "Résolution de problèmes",
+      "Gestion du temps",
+      "Adaptabilité",
+      "Pensée critique",
+      "Leadership",
+      "Créativité",
+      "Souci du détail",
+      "Mentorat"
+    ]
+  },
+
+  "languageCode": "FR"
+}

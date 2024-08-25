@@ -1,0 +1,159 @@
+{
+  "name": "Abhinandan Kumar",
+  "currentRole": "Associate Software Engineer",
+  "thumbnail": {
+    "headerPart1": "Abhinandan is a",
+    "headerPart2": "full-stack developer",
+    "description": "He crafts responsive applications where technologies meet creativity"
+  },
+
+  "about": {
+    "description": "Hello, I’m Abhinandan! <br><br>I am a full-stack developer based in India, currently working at Gainsight. I specialize in creating responsive websites from scratch and transforming them into modern, user-friendly web experiences.<br><br>With over a year of experience in this field, I am continually striving to learn the latest technologies and frameworks. I am excited about the opportunity to join a great team as a full-time member.<br><br>"
+  },
+
+  "skills": {
+    "languages": ["Java", "C", "Python", "JavaScript", "TypeScript", "SQL"],
+    "databases": ["MongoDB", "MySQL", "SQLite", "PostgreSQL"],
+    "tools": [
+      "React",
+      "Node.js",
+      "Git",
+      "Jenkins",
+      "Docker",
+      "Kubernetes",
+      "Figma"
+    ],
+    "frameworks": ["Angular", "Spring Boot", "Django", "Bootstrap"],
+    "others": ["AWS", "Redis", "Jira", "Jupyter Notebook", "Matplotlib"]
+  },
+
+  "projects": {
+    "project1": {
+      "image": "https://via.placeholder.com",
+      "techUsed": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python",
+        "Django",
+        "Bootstrap",
+        "SQLite"
+      ],
+      "name": "Grabit",
+      "description": "An online marketplace tailored for the Institute during the COVID-19 pandemic, designed to minimize physical interactions by enabling multi-photo ad postings, detailed product views, and integrated chat and support features.",
+      "github": "https://github.com",
+      "liveUrl": "https://google.com"
+    },
+    "project2": {
+      "image": "https://via.placeholder.com",
+      "techUsed": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Jupyter Notebook",
+        "Matplotlib"
+      ],
+      "name": "Wine Quality Prediction",
+      "description": "A predictive model for wine quality using Logistic Regression, based on a dataset from the UCI Machine Learning Repository. The model achieved an accuracy of up to 90%, providing reliable insights into wine quality.",
+      "github": "https://github.com",
+      "liveUrl": "https://google.com"
+    },
+    "project3": {
+      "image": "https://via.placeholder.com",
+      "techUsed": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python",
+        "Django",
+        "Bootstrap",
+        "SQLite"
+      ],
+      "name": "Hack4Earth",
+      "description": "A microblogging platform developed in just 7 days for the Hack for Earth Hackathon, allowing users to share ideas and initiatives related to our institution’s cleanliness drive. Achieved a top-three ranking in the competition.",
+      "github": "https://github.com",
+      "liveUrl": "https://google.com"
+    },
+    "project4": {
+      "image": "https://via.placeholder.com",
+      "techUsed": ["Java", "JDBC", "MySQL"],
+      "name": "Real Estate Office",
+      "description": "A database management system designed and implemented for a real estate office, facilitating agents in efficiently managing and selling properties within a city.",
+      "github": "https://github.com",
+      "liveUrl": "https://google.com"
+    }
+  },
+
+  "contact": {
+    "description": "I’m currently looking for full-time opportunities to join a great team. If you have any questions or opportunities, don’t hesitate to contact me.",
+    "email": "abhinandank626@gmail.com"
+  },
+
+  "socialMedia": {
+    "github": "https://github.com/95871abhinandankumar/",
+    "linkedin": "https://www.linkedin.com/in/abhinandan-kumar-6077291a6/",
+    "twitter": "https://twitter.com"
+  },
+
+  "buttons": {
+    "readMore": "Read More",
+    "live": "Live",
+    "github": "GitHub",
+    "contactMe": "Contact me",
+    "home": "home",
+    "about": "about-me",
+    "works": "works",
+    "contacts": "contacts",
+    "projects": "projects",
+    "viewAll": "View All",
+    "skills": "skills"
+  },
+
+  "education": {
+    "institution": "Indian Institute of Information Technology",
+    "degree": "Bachelor of Technology in Computer Science and Engineering",
+    "CGPA": "8.32 / 10.00"
+  },
+
+  "experience": {
+    "job1": {
+      "company": "Gainsight",
+      "title": "Associate Software Engineer",
+      "duration": "Aug 2019 - Present",
+      "location": "Hyderabad, Telangana",
+      "description": "Led the migration of the existing codebase to the Gainsight Horizon components, aligning with a new design system akin to Ant Design, showcasing adept adaptation and in-depth understanding of complex codebases. Continuously engaged in daily tasks of creating new features, updating existing features, and improving performance by reducing API response time to meet business requirements, while adhering to best practices. Actively collaborating with the security team to address and resolve all security-related issues for our team’s codebase, ensuring prompt fixes for any identified vulnerabilities."
+    },
+    "job2": {
+      "company": "IIT Bombay",
+      "title": "Software Developer Intern",
+      "duration": "Sep 2022 – Jun 2023",
+      "location": "Mumbai, Maharashtra",
+      "description": "Developed key features for dictionary translation, including dynamic order determination based on document relevance. Implemented websocket-based asynchronous task management for real-time updates. Designed and developed a visual log analysis tool to display translation statistics of pages and books using interactive graphs and tables. Developed a feature enabling users to view, upload, and share sample dictionaries, enhancing their usability in translations. Successfully managed a team, fostering collaboration and honing both technical and soft skills."
+    }
+  },
+
+  "skillsSummary": {
+    "concepts": [
+      "Compiler",
+      "Operating System",
+      "Machine Learning",
+      "DBMS",
+      "Data Structures and Algorithms",
+      "Object-Oriented Programming"
+    ],
+    "softSkills": [
+      "Communication",
+      "Teamwork",
+      "Problem-Solving",
+      "Time Management",
+      "Adaptability",
+      "Critical Thinking",
+      "Leadership",
+      "Creativity",
+      "Attention to Detail",
+      "Mentoring"
+    ]
+  },
+
+  "languageCode": "EN"
+}
