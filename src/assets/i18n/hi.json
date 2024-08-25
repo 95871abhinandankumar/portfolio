@@ -86,6 +86,14 @@
       "description": "रियल एस्टेट कार्यालय के लिए एक डेटाबेस प्रबंधन प्रणाली को डिज़ाइन और लागू किया गया, जिससे एजेंटों को शहर के भीतर संपत्तियों का कुशलतापूर्वक प्रबंधन और बिक्री करने में सहायता मिली।",
       "github": "https://github.com",
       "liveUrl": "https://google.com"
+    },
+    "project5": {
+      "image": "https://example.com/path-to-portfolio-image.jpg",
+      "techUsed": ["React", "JavaScript", "CSS", "HTML"],
+      "name": "Portfolio",
+      "description": "एक व्यक्तिगत पोर्टफोलियो वेबसाइट जो मेरे काम, कौशल और उपलब्धियों को प्रदर्शित करती है। यह मेरे पेशेवर पृष्ठभूमि का अवलोकन प्रदान करती है और मेरे परियोजनाओं और उपलब्धियों को प्रदर्शित करने के लिए एक मंच के रूप में कार्य करती है।",
+      "github": "https://github.com/your-username/your-portfolio",
+      "liveUrl": "https://your-portfolio.com"
     }
   },
 

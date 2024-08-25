@@ -80,6 +80,14 @@
       "description": "Un système de gestion de base de données conçu et mis en œuvre pour un bureau immobilier, permettant aux agents de gérer et de vendre efficacement des propriétés dans une ville.",
       "github": "https://github.com",
       "liveUrl": "https://google.com"
+    },
+    "project5": {
+      "image": "https://example.com/path-to-portfolio-image.jpg",
+      "techUsed": ["React", "JavaScript", "CSS", "HTML"],
+      "name": "Portfolio",
+      "description": "Un site web de portfolio personnel présentant mon travail, mes compétences et mes réalisations. Il fournit un aperçu de mon parcours professionnel et sert de plateforme pour présenter mes projets et mes accomplissements.",
+      "github": "https://github.com/your-username/your-portfolio",
+      "liveUrl": "https://your-portfolio.com"
     }
   },
 

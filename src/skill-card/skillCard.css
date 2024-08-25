@@ -6,7 +6,7 @@
 }
 
 .skill-card-header {
-    display: flex;
+  display: flex;
   color: #abb2bf;
   border-bottom: 1px solid #abb2bf;
   width: 158px;
@@ -15,8 +15,18 @@
 }
 
 .skill-card-body {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 1024px) {
+  .skill-card {
+    width: 300px;
+  }
+
+  .skill-card-header {
+    width: 280px;
+  }
 }

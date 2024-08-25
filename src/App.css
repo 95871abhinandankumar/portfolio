@@ -1,9 +1,7 @@
 hr {
-  width: 50%;
   margin: 0px;
   padding: 0px;
 }
-
 
 .wrapper {
   background-color: #282c33;
@@ -34,7 +32,7 @@ aside {
 .vertical-line {
   width: 1px;
   height: 191px;
-  background-color: #ABB2BF;
+  background-color: #abb2bf;
 }
 
 .container {
@@ -126,7 +124,6 @@ aside {
 
 .projects-body {
   display: flex;
-  justify-content: space-between;
   gap: 14px;
   flex-wrap: wrap;
 }
@@ -302,12 +299,11 @@ footer span {
 .footer-content-about-email {
   font-size: 16px;
   font-weight: lighter;
-  color: #ABB2BF;
+  color: #abb2bf;
 }
 
 .footer-content-social-media {
   width: 112px;
-
 }
 
 .footer-content-social-media h2 {
@@ -316,4 +312,128 @@ footer span {
 
 .footer-content-social-media img {
   margin: 0 2px;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+
+  .container {
+    width: 360px;
+  }
+
+  .first {
+    flex-direction: column;
+  }
+
+  .first-content {
+    width: 360px;
+  }
+
+  .first-content-with-image {
+    width: 360px;
+  }
+
+  .first-content-with-image img {
+    width: 360px;
+  }
+
+  .quote-image {
+    width: 360px;
+  }
+
+  .projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .projects-header {
+    align-self: baseline;
+  }
+
+  .projects-header hr {
+    width: 20px !important;
+    margin-right: 10px;
+  }
+
+  .projects-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .skills-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* background-image: url("./assets/images/skill-side-image.png"); */
+    width: 360px;
+    /* background-size: cover;
+    background-position: center; */
+  }
+
+  .skills-header {
+    align-self: baseline;
+  }
+
+  .skills-header hr {
+    width: 190px;
+  }
+
+  .skills-body img {
+    display: none;
+  }
+
+  .skills-body-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-me-content {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .about-me-content-header {
+    align-self: baseline;
+  }
+
+  .about-me-content-header hr {
+    width: 200px;
+  }
+
+  .about-me img {
+    display: none;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    flex-wrap: wrap;
+  }
+
+  .contacts-body {
+    flex-wrap: wrap;
+  }
+
+  .contacts-body-left {
+    width: 360px;
+  }
 }

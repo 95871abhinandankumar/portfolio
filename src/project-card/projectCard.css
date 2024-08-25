@@ -1,51 +1,51 @@
 .project-card img {
-    display: block;
-    height: 201px;
-    width: 330px;
+  display: block;
+  height: 250px;
+  width: 330px;
 }
 
 .project-card {
-    color: #ABB2BF;
-    border: 1px solid #ABB2BF;
-    width: 330px;
-    height: fit-content;
+  color: #abb2bf;
+  border: 1px solid #abb2bf;
+  width: 330px;
+  height: fit-content;
 }
 
 .skills-used {
-    border: 1px solid #ABB2BF;
-    padding: 10px;
+  border: 1px solid #abb2bf;
+  padding: 10px;
 }
 .skills-used span {
-    margin: 0 5px;
-    display: inline-block;
-    width: fit-content;
+  margin: 0 5px;
+  display: inline-block;
+  width: fit-content;
 }
 
 .project-card-content {
-    padding: 15px;
+  padding: 15px;
 }
 
 .project-card-content div {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .project-card-content h2 {
-    color: white;
+  color: white;
 }
 
 .github {
-    border: 1px solid #C778DD;
-    font-size: 16px;
-    font-weight: medium;
-    padding: 5px;
-    color: white;
+  border: 1px solid #c778dd;
+  font-size: 16px;
+  font-weight: medium;
+  padding: 5px;
+  color: white;
 }
 
 .live {
-    border: 1px solid #C778DD;
-    font-size: 16px;
-    font-weight: medium;
-    padding: 5px;
-    color: white;
+  border: 1px solid #c778dd;
+  font-size: 16px;
+  font-weight: medium;
+  padding: 5px;
+  color: white;
 }

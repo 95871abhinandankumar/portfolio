@@ -81,7 +81,16 @@
       "description": "A database management system designed and implemented for a real estate office, facilitating agents in efficiently managing and selling properties within a city.",
       "github": "https://github.com",
       "liveUrl": "https://google.com"
-    }
+    },
+    "project5": {
+        "image": "https://example.com/path-to-portfolio-image.jpg",
+        "techUsed": ["React", "JavaScript", "CSS", "HTML"],
+        "name": "Portfolio",
+        "description":
+          "A personal portfolio website showcasing my work, skills, and achievements. It provides an overview of my professional background and serves as a platform to showcase my projects and accomplishments.",
+        "github": "https://github.com/your-username/your-portfolio",
+        "liveUrl": "https://your-portfolio.com"
+      }
   },
 
   "contact": {
